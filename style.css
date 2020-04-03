@@ -24,7 +24,7 @@
 
 body
 {
-    margin: 0px;
+    margin: 0;
 }
 
 #pageframe
@@ -76,14 +76,15 @@ p, ul
 
 /* link */
 
-a:link
+.text_lisere_2 a
 {
     color: black;
+    text-decoration: none;
 }
 
-a:hover
+.text_lisere_2 a:hover
 {
-    color:  white;
+    color: white;
 }
 
 /* list langues */
@@ -101,14 +102,26 @@ ul.liste_langues
 #lisere
 {
     width: 30%;
-    height: 2100px;
     background-color: rgb(152, 104, 149);
-    position: relative;
 }
 
 .container_lisere
 {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.photo_circle
+{
+    position: relative;
+    width: 230px;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    margin: 25px auto;
+    border: 4px solid rgb(92, 13, 87);
 }
 
 .text_small_screen
@@ -118,8 +131,8 @@ ul.liste_langues
 
 .loisirs
 {
-    position: absolute;
-    bottom: 0;
+    margin-bottom: 0;
+    margin-top: auto;
     padding: 20px 0px;
     width: 100%;
 }
@@ -139,18 +152,6 @@ ul.liste_langues
     max-height: 80px;
 }
 
-.photo_circle
-{
-    position: relative;
-    width: 230px;
-    height: 230px;
-    overflow: hidden;
-    border-radius: 50%;
-    display: block;
-    margin: 25px auto;
-    border: 4px solid rgb(92, 13, 87);
-}
-
 /* div contenuCV */
 
 #contenuCV
@@ -164,7 +165,6 @@ header
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: left; */
     height: 270px;
 }
 
@@ -255,7 +255,6 @@ section
 .description
 {
     width: 60%;
-    /* min-width: 420px; */
 }
 
 .entreprise
@@ -303,30 +302,18 @@ ul
         flex-direction: column;
         margin-left: 40px;
         justify-content: center;
-        /* margin: auto; */
-        /* width: 40%;
-        height: 40%; */
     }
     .photo_texte
     {
         display: flex;
     }
-
     .text_lisere_2 
     {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        /* margin-top: 0px;
-        margin-bottom: 0px; */
         margin: 0px 40px;
     }
-
-    /* .contact, .propos, .loisirs
-    {
-        overflow-block: auto;
-    } */
-
     .loisirs
     {
         position: relative;
@@ -343,33 +330,29 @@ ul
     {
         display: inline-flex;
     }
-
     #lisere
     {
         width: auto;
         height: auto;
     }
-
     #contenuCV
     {
         width: auto;
     }
-
    .text_small_screen 
     {
-        /* display: flex; */
         margin: 0px 40px;
         padding-top: 0px;
-        /* margin: auto; */
-        /* width: 40%;
-        height: 40%; */
+        text-align: center;
     }
-
+    .titre_profession::after 
+    {
+        display: none;
+    }
     h1
     {
         margin: 0px;
     }
-
     .photo_texte
     {
         display: flex;
@@ -377,50 +360,29 @@ ul
         justify-content: center;
         align-items: center;
     }
-
     .text_lisere_2
     {
         display: flex;
         flex-direction: column;
     }
-
-    /* .contact
-    {
-        display: flex;
-        flex-wrap: wrap;
-    } */
-
-    .loisirs
-    {
-        position: relative;
-    }
-
     header
     {
         display: none;
     }
-
     .container
     {
         display: flex;
         flex-wrap: wrap;
-        /* margin-block-end: 40px; */
         margin-bottom: 40px;
-        /* background-color: rgba(152, 104, 149, 20%); */
-        /* margin: 30px; */
     }
-    
     .description
     {
     width: 100%;
-    /* min-width: 420px; */
     }
-
     p
     {
         margin: 3px;
     }
-
     .dates
     {
         width: 80%;
