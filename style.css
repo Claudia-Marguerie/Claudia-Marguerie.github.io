@@ -389,7 +389,6 @@ ul
 /* Pour impression */
 
 @media print {
-
     .photo_circle {
         width: 65%;
         height: 65%;
@@ -404,7 +403,6 @@ ul
     header {
         font-size: 0.4em;
         margin-bottom: 0%;
-        justify-content: top;
         height: 100px;
     }
     .icons1 {
