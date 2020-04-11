@@ -385,3 +385,57 @@ ul
         width: 80%;
     }
 }
+
+/* Pour impression */
+
+@media print {
+
+    .photo_circle {
+        width: 65%;
+        height: 65%;
+    }
+    .h2_fond {
+        font-size: 0.8em;
+        height: 30px;
+    }
+    .text_lisere, .text_lisere_2 {
+        margin: 10px 20px;
+    }
+    header {
+        font-size: 0.4em;
+        margin-bottom: 0%;
+        justify-content: top;
+        height: 100px;
+    }
+    .icons1 {
+        width: 15px;
+        height: 15px;
+    }
+    .icons {
+        width: 10px;
+        height: 10px;
+    }
+    .h2_titre {
+        font-size: 0.8em;
+        margin-left: 30px;
+    }
+    p, ul {
+        font-size: 0.5em;
+    }
+    .dates {
+        min-width: 50px;
+    }
+    .description {
+        width: 80%;
+    }
+    .dot_circle {
+        width: 2%;
+    }
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+    .container {
+        margin-bottom: 0px;
+    }
+}
