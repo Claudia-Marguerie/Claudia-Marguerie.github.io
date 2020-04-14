@@ -389,6 +389,9 @@ ul
 /* Pour impression */
 
 @media print {
+    #lisere {
+    background-color: rgba(152, 104, 149, 20%);
+    }
     .photo_circle {
         width: 65%;
         height: 65%;
@@ -396,6 +399,7 @@ ul
     .h2_fond {
         font-size: 0.8em;
         height: 30px;
+        background-color: rgb(152, 104, 149);
     }
     .text_lisere, .text_lisere_2 {
         margin: 10px 20px;
